@@ -1,11 +1,13 @@
-subtotal = float(input("Please input yout subtotal: "))
-tip = float(input("Please enter your tip percent: "))
-people= float(input("How many people attended the party: "))
-taxrate  = 0.25
-tipamount = subtotal * (tip/100)
-# use round function to round the decimal places to 2
-tax  = round(subtotal*taxrate, 2)
-total = round(subtotal + tax, 2) + tipamount
-ppp = total/people
-print("Each person should pay: " + str(ppp))
-print("Your total amount is: " + str(total))
+correct_email = "ram.eerpina"
+guess_count = 0
+guess_limit = 5
+while guess_count < guess_limit:
+    email = input("Please enter your email: \n")
+    if email == correct_email:
+        print("Log in is Succesful")
+        break
+    else:
+        print("Incorrect login")
+        guess_count += 1
+else:
+    print("Maximum Attempts Reached")
