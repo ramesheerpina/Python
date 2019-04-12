@@ -1,6 +1,6 @@
 
 
-name = "Ram"
+name = input("Your Name: ")
 print("Hello " + name + " Its nice to meet you today")
 
 #price = int(input("Please enter the total \n"))
