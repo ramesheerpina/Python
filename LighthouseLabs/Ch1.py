@@ -1,3 +1,4 @@
-print ("""Hey Jude 
-Don't make it bad 
-And make it better""")
+material = 'snow'
+shape = 'ball'
+projectile = material + shape
+print(projectile)
