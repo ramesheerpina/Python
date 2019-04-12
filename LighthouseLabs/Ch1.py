@@ -1,1 +1,3 @@
-print ("Hey Jude \nDon't make it bad \nAnd make it better")
+print ("""Hey Jude 
+Don't make it bad 
+And make it better""")
