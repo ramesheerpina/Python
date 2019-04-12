@@ -4,6 +4,8 @@ price = int(input("Please enter the total \n"))
 taxrate = 0.13
 subtotal = price * taxrate
 total = price+ subtotal
-print("your bill total is " + str(total))
+print("your bill total is ")
+print(total)
 
-
+name = "Ram"
+print("Hello " + name + " Its nice to meet you today")
