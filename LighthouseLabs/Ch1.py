@@ -1,10 +1,8 @@
-houseprice = 100000
-userCreditRating = input("Please enter user credit rating (bad, fair, good, excellent: \n ")
-if userCreditRating == "bad":
-    print("Downpayment will be " + str(round(houseprice*0.2)))
-elif userCreditRating == "fair":
-    print("Downpayment will be " + str(houseprice*0.15))
-elif userCreditRating == "good":
-    print("Downpayment will be " + str(houseprice*0.1))
-else:
-    print("Downpayment will be " + str(round(houseprice*0.05)))
+input1 = input("Enter name of a place: \n")
+input2 = input("Enter name of abject: \n")
+game ="Just as I arrived at place, I realized I had forgotten my object"
+sentence = (game\
+    .replace("place",input1)
+    .replace("object",input2)
+            )
+print(sentence)
