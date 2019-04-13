@@ -1,18 +1,26 @@
 correct_email = "ram.eerpina"
 password = "abc"
-guess_count = 0
-guess_limit = 5
-while guess_count < guess_limit:
+email_count = 0
+email_limit = 3
+pwd_count = 0
+pwd_attempts = 3
+while email_count < email_limit:
     email = input("Please enter your email: \n")
-    if email != correct_email:
-        print("email not valid")
-    else:
-        pwd = input("Please enter your password: \n")
-        if password == pwd:
-            print("Login Successful")
-            break
+    email_count += 1
+    if email == correct_email:
+        print("Valid Email")
+        while pwd_count < pwd_attempts:
+            pwd = input("Please enter your password: \n")
+            pwd_count += 1
+            if pwd == password:
+                print("Login Successful")
+                break
+            else:
+                print("Login Failed, Wrong Password")
         else:
-            print("Incorrect login")
-            guess_count += 1
+            print("Maximum Password attempts Reached")
+        break
+    else:
+        print("Wrong email")
 else:
-    print("Maximum Attempts Reached")
+    print("Maximum Email Attempts Reached")
