@@ -12,4 +12,5 @@ instructionScreemed = []
 for nextinstruction in instructionsteps:
     upperinstruction = nextinstruction.upper()
     instructionScreemed.append(upperinstruction)
+    print(upperinstruction)
 print(instructionScreemed, "you are there")
