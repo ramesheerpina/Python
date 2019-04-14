@@ -8,9 +8,9 @@ instructionsteps = [
     "park right on the street"
 ]
 
-instructionScreemed = []
+
 for nextinstruction in instructionsteps:
+    instructionScreemed = []
     upperinstruction = nextinstruction.upper()
     instructionScreemed.append(upperinstruction)
-    print(upperinstruction)
 print(instructionScreemed, "you are there")
