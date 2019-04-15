@@ -8,10 +8,23 @@ near them, but when people see how ADJECTIVE I can be, I am sure to rise to the 
  
  Dont worry about me, and tell dad to take good care of my PERSONAL_ITEM. I will be sure to call every 
  HOLIDAY
+ 
+ Love,
+ NAME
  """
 
-prompt = "Please provide a holiday"
-placeholder = "HOLIDAY"
-userinput = input(prompt)
-newProseString = proseString.replace(placeholder, userinput)
-print(newProseString)
+replacements = [
+    ["an occupation", "OCCUPATION"],
+    ["a country", "COUNTRY"],
+    ["A plural noun", "PLURAL_NOUN"],
+    ["A verb like 'run', 'eat', or 'think'", "VERB"],
+    ["An adjective like 'friendly', 'long', 'warm'", "ADJECTIVE"],
+    ["A personal item", "PERSONAL ITEM"],
+    ["A holiday", "HOLIDAY"],
+    ["Your Name", "NAME"]
+]
+for prompt, placeholder in replacements:
+    userinput = input(prompt)
+    proseString = proseString.replace(placeholder, userinput)
+
+print(proseString)
