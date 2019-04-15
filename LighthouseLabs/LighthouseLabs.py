@@ -10,6 +10,8 @@ near them, but when people see how ADJECTIVE I can be, I am sure to rise to the 
  HOLIDAY
  """
 
-userInput = input("Please provide a holiday")
-newProseString = proseString.replace("HOLIDAY", userInput)
+prompt = "Please provide a holiday"
+placeholder = "HOLIDAY"
+userinput = input(prompt)
+newProseString = proseString.replace(placeholder, userinput)
 print(newProseString)
