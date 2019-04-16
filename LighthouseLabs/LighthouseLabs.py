@@ -15,13 +15,12 @@ roles = [
 print("Featuring \n"
       "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+")
 
-for index in range(0,len(actors)):
-    print((actors[index])+ " as "+ (roles[index]))
-
-print("Using 'Enumerate' function")
-#  "Enumerate" is a function that gives us access to two variables on each iteration:
-#  The list item itself, and that item's index.
-for index, actor in enumerate(actors):
-    print((actor)+ " as "+ (roles[index]))
-
 enumerableActors = enumerate(actors)
+enumerableActorsList = list(enumerableActors)
+print(enumerableActorsList)
+
+for index, actor in enumerableActorsList:
+    print(index)
+    print(actor)
+
+print(list(enumerate(actors)))
