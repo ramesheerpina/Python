@@ -24,3 +24,6 @@ for index, actor in enumerableActorsList:
     print(actor)
 
 print(list(enumerate(actors)))
+
+for index, letter in enumerate("abcdefghijklmnopqrstuvwxyz"):
+    print(letter + " is the "+ str(index+1) + "th letter of alphabet")
