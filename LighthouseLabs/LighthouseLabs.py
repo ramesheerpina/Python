@@ -12,7 +12,7 @@ while initialcount < finalcount:
     elif len(password1) > 8:
         print("password too long")
 
-    elif len(password1) == 8:
+    else:
         print("you password is 8 characters")
         while initialcount < finalcount :
             initialcount += 1
