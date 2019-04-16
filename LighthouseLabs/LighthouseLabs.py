@@ -1,27 +1,21 @@
-# excercise = password checker
-
-pwd = ("123456")
-initialcount = 0
-finalcount = 5
-while initialcount < finalcount:
-    initialcount += 1
-    password1 = input("Please enter your password")
-    if len(password1) < 8:
-        print("password too short")
-
-    elif len(password1) > 8:
-        print("password too long")
-
+# math game
+questions  = [
+    [1,2],
+    [2,3],
+    [3,4],
+    [5,6]
+]
+score = 0
+for a, b in questions:
+    userresponse = int(input("What is the sum of " + str(a) + " " + str(b)))
+    if userresponse == a+b:
+        score +=1
+        print("yay, you are correct, you scored 1 point")
     else:
-        print("you password is 8 characters")
-        while initialcount < finalcount :
-            initialcount += 1
-            password2 = input("Please enter your password again")
-            if initialcount < finalcount and password1 == password2:
-                print("You have succesfully set your password")
-                break
-            if initialcount < finalcount and password1 != password2:
-                print("passwords didnt match")
-            else:
-                print("passwords didnt match and maximum attempts reached")
-        break
+        score = score
+        print("not as much success, you scored no points")
+
+if score > len(questions)/2:
+    print("Great job! you score is " + str(score)+ " out of " + str(len(questions)))
+else:
+    print("Ahh shucks. you score is " + str(score)+ " out of " + str(len(questions)))
