@@ -1,29 +1,15 @@
-actors = [
-    "Nathan Fillion",
-    "Gina torres",
-    "Alan Tudyk",
-    "Morena Baccrin",
-    "Adam Baldwin"
-]
-roles = [
-    "Capatain Malcolm Reynolds",
-    "Zoe Wasburn",
-    "Hoban Washburn",
-    "Inara Serra",
-    "Jayne Cobb"
-]
-print("Featuring \n"
-      "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+")
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+vowels = "aeiou"
+lphbet = alphabet
+for vowel in vowels:
+    lphbet = lphbet.replace(vowel, "")
 
-enumerableActors = enumerate(actors)
-enumerableActorsList = list(enumerableActors)
-print(enumerableActorsList)
+print(lphbet)
 
-for index, actor in enumerableActorsList:
-    print(index)
-    print(actor)
+favourtieAlphabet = alphabet
+favouriteLetters = 'gsbrox'
 
-print(list(enumerate(actors)))
+for letter in favouriteLetters:
+    favourtieAlphabet = favourtieAlphabet.replace(letter, letter.upper())
 
-for index, letter in enumerate("abcdefghijklmnopqrstuvwxyz"):
-    print(letter + " is the "+ str(index+1) + "th letter of alphabet")
+print(favourtieAlphabet)
