@@ -23,8 +23,15 @@ replacements = [
     ["A holiday", "HOLIDAY"],
     ["Your Name", "NAME"]
 ]
-for prompt, placeholder in replacements:
-    userinput = input(prompt)
-    proseString = proseString.replace(placeholder, userinput)
 
-print(proseString)
+#for prompt, placeholder in replacements:
+    #userinput = input(prompt)
+    #proseString = proseString.replace(placeholder, userinput)
+
+sale = [
+
+]
+#Title
+"A Great Sale"
+
+
